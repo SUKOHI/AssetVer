@@ -1,0 +1,33 @@
+{
+    "name": "sukohi/asset-ver",
+    "description": "A Laravel package that allows you easily to manage a version value for assets URL.  ",
+    "authors": [
+        {
+            "name": "sukohi",
+            "email": "capilano.sukohi@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "laravel/framework": "~5.8.13"
+    },
+    "autoload": {
+        "files": [
+            "src/Helpers/AssetVerHelper.php"
+        ],
+        "psr-4": {
+            "Sukohi\\AssetVer\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sukohi\\AssetVer\\AssetVerServiceProvider"
+            ],
+            "aliases": {
+                "AssetVer": "Sukohi\\AssetVer\\Facades\\AssetVer"
+            }
+        }
+    }
+}
