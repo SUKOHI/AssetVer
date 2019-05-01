@@ -4,7 +4,7 @@ This package is maintained under Laravel 5.8.
 
 # Installation  
 
-    composer require sukohi/asset-ver
+    composer require sukohi/asset-ver:1.*
 
 # Usage
 
