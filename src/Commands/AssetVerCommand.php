@@ -64,6 +64,7 @@ class AssetVerCommand extends Command
         }
 
         $asset_ver->set($mode, $cache_value);
+        \Artisan::call('view:clear');
         $this->info('Done! [ value: '. $asset_ver->getValue() .' ]');
     }
 }
